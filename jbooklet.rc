@@ -1,0 +1,385 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\jbooklet.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\jbooklet.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "JBOOKletのバージョン情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "JBOOKlet Version 1.40",IDC_JBOOKLET_VERSION,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004, 2005, 2006, 2007, 2009 by H.Tsujimura",
+                    IDC_STATIC,48,24,179,8
+    LTEXT           "blog: http://watcher.moe-nifty.com/",
+                    IDC_JBOOKLET_WEB_URL,54,37,105,8,SS_NOTIFY
+    LTEXT           "mailto: tsupo@na.rim.or.jp",IDC_JBOOKLET_MAIL_ADDR,54,
+                    47,73,8,SS_NOTIFY
+    LTEXT           "OpenSSL: ",IDC_OPENSSL,54,60,140,8
+    LTEXT           "iconv: ",IDC_ICONV,54,70,140,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_JBOOKLET_DIALOG DIALOGEX 0, 0, 211, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "JBOOK用商品リンク生成"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "変換",IDOK,71,142,50,14
+    PUSHBUTTON      "終了",IDCANCEL,124,142,50,14
+    LTEXT           "バリューコマースのSID",IDC_STATIC,7,7,68,8
+    EDITTEXT        IDC_EDIT_SID,7,17,94,12,ES_AUTOHSCROLL
+    LTEXT           "バリューコマースのPID",IDC_STATIC,110,7,68,8
+    EDITTEXT        IDC_EDIT_PID,110,17,94,12,ES_AUTOHSCROLL
+    LTEXT           "商品詳細ページURL",IDC_STATIC,7,37,68,8
+    EDITTEXT        IDC_EDIT_URL,7,47,197,12,ES_AUTOHSCROLL
+    LTEXT           "変換結果(Webページ貼り付け用文字列)",IDC_STATIC,7,68,
+                    117,8
+    EDITTEXT        IDC_EDIT_RESULT,7,78,197,57,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "proxy を使う",IDC_CHECK_PROXY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,140,51,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,5
+ PRODUCTVERSION 1,0,1,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "JBOOK の商品に対応する ValueCommerce 経由のアフィリエイトリンクを生成するツール\0"
+            VALUE "CompanyName", "観測気球 http://watcher.moe-nifty.com/\0"
+            VALUE "FileDescription", "jbooklet MFC アプリケーション\0"
+            VALUE "FileVersion", "1, 0, 1, 5\0"
+            VALUE "InternalName", "jbooklet\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004, 2005, 2006, 2007, 2009 by tsupo\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "jbooklet.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "jbooklet アプリケーション\0"
+            VALUE "ProductVersion", "1, 0, 1, 5\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_JBOOKLET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND2               CURSOR  DISCARDABLE     "res\\cur00001.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "jbooklet のバージョン情報(&A)..."
+    IDS_JBOOKLET_VERSION    "1.40"
+    IDS_JBOOKLET_WEB_URL    "http://watcher.moe-nifty.com/memo/2005/02/jbooklet.html"
+    IDS_JBOOKLET_MAIL_ADDR  "tsupo@na.rim.or.jp"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 271, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "JBOOKlet - Version Information"
+FONT 9, "MS P????"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "JBOOKlet Version 1.40",IDC_JBOOKLET_VERSION,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004, 2005, 2006, 2007, 2009 by H.Tsujimura",
+                    IDC_STATIC,44,28,217,8
+    LTEXT           "blog: http://watcher.moe-nifty.com/",
+                    IDC_JBOOKLET_WEB_URL,52,44,139,9,SS_NOTIFY
+    LTEXT           "mailto: tsupo@na.rim.or.jp",IDC_JBOOKLET_MAIL_ADDR,52,
+                    54,140,9,SS_NOTIFY
+    LTEXT           "OpenSSL: ",IDC_OPENSSL,52,72,187,9
+    LTEXT           "iconv: ",IDC_ICONV,52,82,123,9
+    DEFPUSHBUTTON   "OK",IDOK,214,7,50,14,WS_GROUP
+END
+
+IDD_JBOOKLET_DIALOG DIALOGEX 0, 0, 211, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "JBOOKlet"
+FONT 9, "Times New Roman", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Execute",IDOK,71,142,50,14
+    PUSHBUTTON      "Finish",IDCANCEL,124,142,50,14
+    LTEXT           "Your ValueCommerce SID",IDC_STATIC,7,7,74,8
+    EDITTEXT        IDC_EDIT_SID,7,17,94,12,ES_AUTOHSCROLL
+    LTEXT           "Your ValueCommerce PID",IDC_STATIC,110,7,74,8
+    EDITTEXT        IDC_EDIT_PID,110,17,94,12,ES_AUTOHSCROLL
+    LTEXT           "URL of the target item",IDC_STATIC,7,37,63,8
+    EDITTEXT        IDC_EDIT_URL,7,47,197,12,ES_AUTOHSCROLL
+    LTEXT           "Result(paste it for your Web page)",IDC_STATIC,7,68,97,
+                    8
+    EDITTEXT        IDC_EDIT_RESULT,7,78,197,57,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "use proxy",IDC_CHECK_PROXY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,140,43,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,5
+ PRODUCTVERSION 1,0,1,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "make a affiliate link via ValueCommerce for JBOOK items\0"
+            VALUE "CompanyName", "Watching Balloon (KANSOKU-KIKYU) http://watcher.moe-nifty.com/\0"
+            VALUE "FileDescription", "jbooklet MFC Application\0"
+            VALUE "FileVersion", "1, 0, 1, 5\0"
+            VALUE "InternalName", "jbooklet\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004, 2005, 2006, 2007, 2009 by tsupo\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "jbooklet.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "jbooklet Application\0"
+            VALUE "ProductVersion", "1, 0, 1, 5\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_JBOOKLET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "jbooklet Version Information (&A)..."
+    IDS_JBOOKLET_VERSION    "1.40"
+    IDS_JBOOKLET_WEB_URL    "http://watcher.moe-nifty.com/memo/2005/02/jbooklet.html"
+    IDS_JBOOKLET_MAIL_ADDR  "tsupo@na.rim.or.jp"
+END
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\jbooklet.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

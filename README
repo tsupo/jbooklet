@@ -1,0 +1,24 @@
+﻿
+'jbooklet' makes an affiliate link of JBOOK's item via ValueCommerce.
+
+   http://watcher.moe-nifty.com/memo/2005/02/jbooklet.html
+   http://www.vector.co.jp/soft/win95/net/se360214.html
+
+   Requires:
+     - Account of ValueCommerce
+     - Participate in JBOOK's associate on ValueCommerce
+
+
+   JBOOK
+     http://www.jbook.co.jp/
+
+   ValueCommerce
+     http://www.valuecommerce.ne.jp/
+
+
+
+xmlRPC libraries are necessary for building this application.
+
+  xmlRPC: 
+    http://github.com/tsupo/xmlRPC/tree
+
